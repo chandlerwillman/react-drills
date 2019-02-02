@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Image from './Image';
+
+/* what is the myImage thing doing? Is the {} passing in that source to the Image.js file? */
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          <Image myImage={"https://www.filevine.com/wp-content/uploads/2018/01/group-3.png"} />
       </div>
     );
   }
